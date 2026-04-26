@@ -20,8 +20,6 @@ client_scripts {
     'client/minesweeper.lua',
     'client/wavematch.lua',
     'client/untangle.lua',
-    'client/pattern.lua',
-    'client/wirecut.lua',
 }
 
 ui_page 'nui/index.html'

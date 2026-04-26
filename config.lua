@@ -26,19 +26,4 @@ Config.Defaults = {
         nodeCount = 8,
         timeLimit = 30,
     },
-    pickpocket = {
-        speed = 1.5,
-        timeLimit = 25,
-    },
-    pattern = {
-        patternLength = 5,
-        timeLimit = 20,
-        memorizeTime = 4,
-    },
-    wirecut = {
-        wireCount = 7,
-        cutCount = 4,
-        timeLimit = 25,
-        memorizeTime = 5,
-    },
 }
