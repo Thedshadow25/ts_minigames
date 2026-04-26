@@ -1,7 +1,7 @@
 if not Config.Debug then return end
 
 RegisterCommand('test_wordguess', function()
-    local success, reason = exports.shadow_minigames:wordguess()
+    local success, reason = exports.ts_minigames:wordguess()
     print(('Word Guess - Success: %s, Reason: %s'):format(success, reason))
 end, false)
 

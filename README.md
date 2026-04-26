@@ -1,6 +1,6 @@
-# Shadow Minigames
+# TS Minigames
 
-A minigame pack for FiveM, made by Shadow Resources. Includes 5 fully interactive minigames with sound effects, animations, and configurable difficulty.
+A minigame pack for FiveM, made by TS Scripts. Includes 5 fully interactive minigames with sound effects, animations, and configurable difficulty.
 
 ## Minigames
 
@@ -15,15 +15,15 @@ A minigame pack for FiveM, made by Shadow Resources. Includes 5 fully interactiv
 ## Installation
 
 1. Download or clone this repository
-2. Place the `shadow_minigames` folder in your server's `resources` directory
-3. Add `ensure shadow_minigames` to your `server.cfg`
+2. Place the `ts_minigames` folder in your server's `resources` directory
+3. Add `ensure ts_minigames` to your `server.cfg`
 
 ## Usage
 
 All minigames are triggered via exports from any client-side script. Every export returns a promise that resolves when the minigame ends.
 
 ```lua
-local success, state, result = exports.shadow_minigames:wordguess()
+local success, state, result = exports.ts_minigames:wordguess()
 ```
 
 - **success** (`boolean`) - `true` if the player won
@@ -33,7 +33,7 @@ local success, state, result = exports.shadow_minigames:wordguess()
 You can also pass an options table to override the config defaults:
 
 ```lua
-exports.shadow_minigames:minesweeper({
+exports.ts_minigames:minesweeper({
     gridSize = 7,
     mineCount = 8,
     timeLimit = 45,
@@ -45,21 +45,21 @@ exports.shadow_minigames:minesweeper({
 ### Start a minigame
 
 ```lua
-exports.shadow_minigames:wordguess(options)
-exports.shadow_minigames:pathfind(options)
-exports.shadow_minigames:minesweeper(options)
-exports.shadow_minigames:wavematch(options)
-exports.shadow_minigames:untangle(options)
+exports.ts_minigames:wordguess(options)
+exports.ts_minigames:pathfind(options)
+exports.ts_minigames:minesweeper(options)
+exports.ts_minigames:wavematch(options)
+exports.ts_minigames:untangle(options)
 ```
 
 ### Utility exports
 
 ```lua
 -- Force-stop the current minigame (optional: pass game name to only stop that specific one)
-exports.shadow_minigames:stop(gameName)
+exports.ts_minigames:stop(gameName)
 
 -- Check if a minigame is currently active (optional: pass game name)
-exports.shadow_minigames:isActive(gameName)
+exports.ts_minigames:isActive(gameName)
 ```
 
 ## Config Options
@@ -115,7 +115,7 @@ Set `Config.Debug = true` in `config.lua` to enable test commands. Each command 
 
 ```lua
 -- Use a minigame as a hacking puzzle
-local success = exports.shadow_minigames:minesweeper({
+local success = exports.ts_minigames:minesweeper({
     gridSize = 6,
     mineCount = 6,
     timeLimit = 25,

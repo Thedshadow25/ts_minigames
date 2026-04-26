@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-name 'shadow_minigames'
+name 'ts_minigames'
 description 'Minigame pack'
-author 'Shadow Resources'
+author 'TS Scripts'
 version '1.0.0'
 
 use_experimental_fxv2_oal 'yes'
