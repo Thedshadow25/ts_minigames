@@ -76,6 +76,7 @@ exports('pathfind', function(options) return startGame('pathfind', options) end)
 exports('minesweeper', function(options) return startGame('minesweeper', options) end)
 exports('wavematch', function(options) return startGame('wavematch', options) end)
 exports('untangle', function(options) return startGame('untangle', options) end)
+exports('welding', function(options) return startGame('welding', options) end)
 
 exports('stop', function(gameName) return stopGame(gameName) end)
 exports('isActive', function(gameName) return isGameActive(gameName) end)

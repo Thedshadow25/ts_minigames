@@ -26,4 +26,8 @@ Config.Defaults = {
         nodeCount = 8,
         timeLimit = 30,
     },
+    welding = {
+        qualityThreshold = 70,
+        timeLimit = 30,
+    },
 }
