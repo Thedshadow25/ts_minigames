@@ -104,7 +104,6 @@ All defaults can be changed in `config.lua`. Options passed via exports override
 ### Welding
 | Option | Default | Description |
 |--------|---------|-------------|
-| `qualityThreshold` | 70 | Not currently used (reserved for future) |
 | `timeLimit` | 30 | Time in seconds |
 
 ## Debug Mode
