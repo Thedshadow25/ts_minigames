@@ -1,6 +1,6 @@
 # TS Minigames
 
-A minigame pack for FiveM, made by TS Scripts. Includes 5 fully interactive minigames with sound effects, animations, and configurable difficulty.
+A minigame pack for FiveM, made by TS Scripts. Includes 6 fully interactive minigames with sound effects, animations, and configurable difficulty.
 
 ## Minigames
 
@@ -11,6 +11,7 @@ A minigame pack for FiveM, made by TS Scripts. Includes 5 fully interactive mini
 | **Minesweeper** | Memorize mine positions during a preview phase, then find them all. |
 | **Wave Match** | Adjust amplitude and wavelength sliders to match a target wave. |
 | **Untangle** | Drag nodes so that no lines cross each other. |
+| **Welding** | Follow a randomized seam path with a welding torch. Manage temperature to avoid overheating. |
 
 ## Installation
 
@@ -50,6 +51,7 @@ exports.ts_minigames:pathfind(options)
 exports.ts_minigames:minesweeper(options)
 exports.ts_minigames:wavematch(options)
 exports.ts_minigames:untangle(options)
+exports.ts_minigames:welding(options)
 ```
 
 ### Utility exports
@@ -99,6 +101,12 @@ All defaults can be changed in `config.lua`. Options passed via exports override
 | `nodeCount` | 8 | Number of nodes (4-12) |
 | `timeLimit` | 30 | Time in seconds |
 
+### Welding
+| Option | Default | Description |
+|--------|---------|-------------|
+| `qualityThreshold` | 70 | Not currently used (reserved for future) |
+| `timeLimit` | 30 | Time in seconds |
+
 ## Debug Mode
 
 Set `Config.Debug = true` in `config.lua` to enable test commands. Each command can be run in the FiveM chat:
@@ -110,6 +118,7 @@ Set `Config.Debug = true` in `config.lua` to enable test commands. Each command 
 | `/test_minesweeper` | Minesweeper |
 | `/test_wavematch` | Wave Match |
 | `/test_untangle` | Untangle |
+| `/test_welding` | Welding |
 
 ## Example
 
